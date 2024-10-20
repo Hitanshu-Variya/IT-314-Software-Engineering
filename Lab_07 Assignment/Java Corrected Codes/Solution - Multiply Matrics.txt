@@ -1,0 +1,86 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+class MatrixMultiplication {
+    public static void main(String[] args) {
+        int row_1, col_1, row_2, col_2;
+ 
+        Scanner in = new Scanner(System.in);
+        System.out.println("Input: ");
+        System.out.println("Enter the number of rows and columns of first matrix");
+        row_1 = in.nextInt();
+        col_1 = in.nextInt();
+    
+        int first[][] = new int[row_1][col_1];
+        System.out.println("\nEnter the elements of first matrix");
+        for (int c = 0 ; c < row_1 ; c++ )
+            for (int d = 0 ; d < col_1 ; d++ )
+                first[c][d] = in.nextInt();
+    
+        System.out.println("\nEnter the number of rows and columns of second matrix");
+        row_2 = in.nextInt();
+        col_2 = in.nextInt();
+        
+        int second[][] = new int[row_2][col_2];
+        if (col_1 != row_2)
+            System.out.println("\nMatrices with entered orders can't be multiplied with each other.");
+        else {
+            System.out.println("\nEnter the elements of second matrix");
+     
+            for (int c = 0; c < row_2; c++)
+                for (int d = 0; d < col_2; d++)
+                    second[c][d] = in.nextInt();
+        }
+        in.close();
+        
+        int multiply[][] = new int[row_1][col_2];
+        int sum = 0;
+        
+        for (int c = 0 ; c < row_1 ; c++ ) {
+            for (int d = 0 ; d < col_2 ; d++ ) {   
+                sum = 0;
+                for (int k = 0 ; k < col_1 ; k++ ) {
+                   sum += first[c][k] * second[k][d]; 
+                }
+   
+                multiply[c][d] = sum;
+            }
+        }
+        
+        System.out.println("\n\nOutput: ");
+        System.out.println("Product of entered matrices:-");
+        for (int c = 0 ; c < row_1 ; c++ ) {
+            for (int d = 0 ; d < col_2 ; d++ )
+                System.out.print(multiply[c][d] + " ");
+            System.out.print("\n");
+        }
+    }
+}
+
+
+class Main {
+    public static void main(String args[]) {
+        MatrixMultiplication.main(args);
+    }
+}
+
+// Input: 
+// Enter the number of rows and columns of first matrix
+// 2 2 
+
+// Enter the elements of first matrix
+// 1 2 
+// 3 4
+
+// Enter the number of rows and columns of first matrix
+// 2 2 
+
+// Enter the elements of first matrix
+// 1 0 
+// 1 0
+
+// Output: 
+// Product of entered matrices:
+// 3 0
+// 7 0
+       

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+import java.util.*;
+
+class MagicNumberCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input: ");
+        int num = scanner.nextInt(); 
+        scanner.close(); 
+        
+        int n = num;
+        while(num > 9) {
+            int sum = 0;
+            
+            while(num > 0) {
+                sum += (num % 10); 
+                num /= 10; 
+            }
+            
+            num = sum;
+        }
+        
+        System.out.print("Output: ");
+        if(num == 1) {
+            System.out.println(n + " is a Magic Number.");
+        }
+        else {
+            System.out.println(n + " is not a Magic Number.");
+        }
+    }
+}
+
+class Main {
+    public static void main(String args[]) {
+        MagicNumberCheck.main(args);
+    }
+}
+
+// Input: Enter the number to be checked 119
+// Output: 119 is not a Magic Number.
+
+// Input: Enter the number to be checked 199
+// Output 199 is a Magic Number.
