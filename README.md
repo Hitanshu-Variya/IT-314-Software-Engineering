@@ -49,3 +49,52 @@ This Folder contains diagrams and models for the **Point of Sale (POS) System**,
   - **Activity Diagrams**: Visual workflows for the sale and return processes, illustrating the dynamic behavior and decision points within the system.
   - **Analysis Domain Models**: Conceptual representations of the system components and their relationships.
 
+<br><br>
+
+# Lab 07: Program Inspection, Debugging, and Static Analysis
+
+This lab focuses on understanding program inspection, debugging methods, and static analysis techniques. It includes solving common algorithmic problems like Armstrong numbers, GCD & LCM, and others using tools like the GDB debugger. Additionally, it applies static analysis tools such as CppCheck to identify potential issues in Github code for GoDot Engine, C++ code.
+
+### Part-1: JAVA Code Debugging Section:
+- **Debugger Used:** GDB Debugger, with online workspace support.
+
+
+| **Problem**                    | **Description**                                                                 |
+|---------------------------------|---------------------------------------------------------------------------------|
+| **Armstrong Problem**           | Identifies key errors in calculating the number of digits and the correction of remainder logic. |
+| **GCD and LCM Problem**         | Discusses loop conditions and the corrected logic for calculating GCD and LCM.  |
+| **Knapsack Problem**            | Addresses array access issues and incorrect conditional logic for item selection. |
+| **Magic Number Problem**        | Corrects sum calculation logic and ensures accurate digit breakdown.            |
+| **Merge Sort Problem**          | Fixes array handling and recursive calls for sorting efficiency.                |
+| **Matrix Multiplication Problem**| Refines variable handling and multiplication logic for matrix operations.       |
+| **Quadratic Probing Problem**   | Corrects hashing logic and ensures proper probe handling during insertions and deletions. |
+| **Sorting Problem**             | Fixes sorting logic errors and ensures proper comparisons for ordering arrays.   |
+| **Stack Implementation Problem**| Rectifies stack pointer handling and error-checking during push/pop operations.  |
+| **Tower of Hanoi Problem**      | Ensures correct recursion by fixing issues with disk movements in the algorithm. |
+
+### Part-2: Code Inspection Using Checklist
+
+The code inspection process in this lab was performed using a checklist-based approach to identify common types of errors. The checklist included the following categories:
+
+| **Checklist Category**        | **Description**                                                                 |
+|-------------------------------|---------------------------------------------------------------------------------|
+| **Data Reference Errors**      | Ensured that all pointers and references are properly initialized and used. Checked for potential `null` references or invalid memory access. |
+| **Computation Errors**         | Verified correctness of all mathematical operations, including proper handling of edge cases such as division by zero and overflow/underflow issues. |
+| **Data Declaration Errors**    | Checked that all variables are declared with the correct data type and that default values are assigned where necessary. |
+| **Loop and Conditional Errors**| Ensured loops are properly formed with valid terminating conditions, and conditional statements correctly handle all possible cases. |
+| **Input Validation**           | Verified that all user inputs are validated for correctness, including boundary checks and type checks before usage. |
+| **Functionality Checks**       | Checked each function to ensure it behaves as expected, handles edge cases, and returns the correct output based on its input. |
+| **Error Handling**             | Verified that the code handles exceptions and error conditions gracefully, providing useful error messages and maintaining stability. |
+
+
+### Part-3: Static Tool Analysis:
+- **Tool Used:** CppCheck.
+
+| **Type**            | **Count** |
+|---------------------|-----------|
+| **Errors Identified**  | 2         |
+| **Warnings Identified**| 37        |
+| **Info Identified**     | 0         |
+
+
+Also Attached the Correct Executable code solutions and Static Analysis Report to further check for errors and warnings.
