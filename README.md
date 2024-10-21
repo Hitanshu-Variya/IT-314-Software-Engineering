@@ -98,3 +98,40 @@ The code inspection process in this lab was performed using a checklist-based ap
 
 
 Also Attached the Correct Executable code solutions and Static Analysis Report to further check for errors and warnings.
+
+<br><br>
+
+# Lab 08: Functional Testing (Black Box)
+
+This lab focuses on designing and executing black-box testing techniques such as equivalence partitioning and boundary value analysis. It involves testing common algorithmic problems like linear search, triangle classification, and date validation using unit testing for verification of expected outcomes.
+
+### Problem 1: Previous Date Determination Program
+- Objective: Design test cases to validate date inputs.
+- Solution: Derived equivalence classes for day, month, and year to handle valid/invalid cases.
+- Test Suite: Includes both valid and invalid test data based on equivalence partitioning.
+
+### Problem 2: Linear Search
+- Objective: Test linear search functionality.
+- Solution: Created test cases using equivalence partitioning and boundary value analysis.
+- Test Suite: Covers various scenarios including value found, not found, and empty arrays.
+
+### Problem 3: Count Item Program
+- Objective: Test counting occurrences of a value in an array.
+- Solution: Developed test cases based on equivalence partitioning.
+- Test Suite: Includes multiple occurrences, single occurrences, and empty arrays.
+
+### Problem 4: Triangle Classification
+- Objective: Classify triangles as equilateral, isosceles, scalene, or invalid.
+- Solution: Applied equivalence partitioning and boundary value analysis.
+- Test Suite: Covers all triangle types, including invalid ones.
+
+### Problem 5: Prefix Check Program
+- Objective: Test whether a string is a prefix of another string.
+- Solution: Created test cases using equivalence partitioning.
+- Test Suite: Includes cases for empty, equal, and prefix strings.
+
+### Problem 6: Extended Triangle Classification (Floating Point)
+- Objective: Classify triangles with floating-point side lengths.
+- Solution: Used equivalence partitioning and boundary value analysis.
+- Test Suite: Handles valid and invalid triangles, including right-angled ones.
+
