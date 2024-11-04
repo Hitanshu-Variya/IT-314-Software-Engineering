@@ -135,3 +135,26 @@ This lab focuses on designing and executing black-box testing techniques such as
 - Solution: Used equivalence partitioning and boundary value analysis.
 - Test Suite: Handles valid and invalid triangles, including right-angled ones.
 
+<br><br>
+
+# Lab 09 Assignment: Mutation Testing
+
+This lab focuses on implementing and Mutation testing the Graham's Scan algorithm for finding the convex hull of a set of points in a two-dimensional plane. The implementation is tested using unit tests with pytest, and code coverage is measured using pytest-cov and mutation testing using mutpy.
+
+### Features
+- Implementation of the Graham's Scan algorithm for computing the convex hull.
+- Comprehensive unit tests using pytest, including:
+  - Statement Coverage
+  - Branch Coverage
+  - Basic Condition Coverage
+  - Path Coverage
+- Code coverage analysis with pytest-cov to identify untested areas in the code.
+- Mutation testing with MutPy to assess the effectiveness of the test cases.
+
+### Python libraries used
+- staticfg / CFGBuilder for building CFG using DOT Language
+- Graphviz for Control Flow Graph Generation
+- pytest for Unit testing
+- pytest-cov for code coverage testing
+- mutpy for mutation testing
+
